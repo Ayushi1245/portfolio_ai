@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ayushi</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Remix Icon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+        theme: {
+        extend: {
+        colors: {
+        primary: '#78dcc3',
+        secondary: '#88c8eb'
+        },
+        borderRadius: {
+        'none': '0px',
+        'sm': '4px',
+        DEFAULT: '8px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '20px',
+        '2xl': '24px',
+        '3xl': '32px',
+        'full': '9999px',
+        'button': '8px'
+        }
+        }
+        }
+        }
+        </script>
+</head>
+<body class="bg-white text-gray-800 font-['Inter']">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-200">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="#" class="text-2xl font-['Pacifico'] text-primary">Ayushi</a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-gray-600 hover:text-primary transition-colors">Home</a>
+                    <a href="#about" class="nav-link text-gray-600 hover:text-primary transition-colors">About</a>
+                    <a href="#skills" class="nav-link text-gray-600 hover:text-primary transition-colors">Skills</a>
+                    <a href="#projects" class="nav-link text-gray-600 hover:text-primary transition-colors">Projects</a>
+                    <a href="#contact" class="nav-link text-gray-600 hover:text-primary transition-colors">Contact</a>
+                    <button class="!rounded-button bg-primary text-white px-6 py-2 hover:bg-primary/90 transition-colors">Hire Me</button>
+                </div>
+                <button class="md:hidden w-10 h-10 flex items-center justify-center">
+                    <i class="ri-menu-line text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="pt-24 min-h-screen flex items-center relative overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h1 class="text-5xl font-bold leading-tight">
+                        Hi, I'm Ayushi
+                        <span class="block text-primary mt-2">Web Developer</span>
+                    </h1>
+                    <p class="text-gray-600 text-lg">Building modern, responsive, and intuitive web experiences with a blend of creativity and technical expertise.</p>
+                    <div class="flex space-x-4">
+                        <button class="!rounded-button bg-primary text-white px-8 py-3 hover:bg-primary/90 transition-colors" onclick="window.open('https://github.com/Ayushi1245', '_blank')">View Projects</button>
+                    </div>
+                </div>
+                <!-- Image of 1st page -->
+                <div class="relative">
+                    <img src="assets/img/img5.png"  data-speed="2" class="move" alt="John Anderson">
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- About Section -->
+<section id="about" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-16">About Me</h2>
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="relative">
+                <img src="https://i.pinimg.com/736x/a0/fd/d0/a0fdd09acbc6144589ad64c5e2e816c5.jpg" class="rounded-2xl shadow-xl" alt="About Ayushi">
+            </div>
+            <div class="space-y-6">
+                <p class="text-gray-600">I’m Ayushi, a passionate Machine Learning Enthusiast and Front-End Developer with a strong background in Computer Vision, Sentiment Analysis, and Competitive Programming.</p>
+                <p class="text-gray-600">Currently pursuing my B.Sc. in Information Technology (Graduating in 2025), I love solving complex problems and building innovative projects.</p>
+                <div class="grid grid-cols-2 gap-4 mt-8">
+                    <div class="space-y-2">
+                        <div class="flex items-center space-x-2">
+                            <i class="ri-medal-line text-primary"></i>
+                            <span class="font-semibold">3rd year B.Sc IT student</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="ri-customer-service-line text-primary"></i>
+                            <span class="font-semibold">24/7 Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-20">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-16">My Skills</h2>
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="space-y-6">
+                <h3 class="text-2xl font-semibold mb-6">Technical Skills</h3>
+                <div class="space-y-4">
+                    <!-- C/C++ Skill Bar -->
+                    <div class="space-y-2">
+                        <div class="flex justify-between">
+                            <span class="font-medium">C/C++</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="h-2 bg-gray-700 rounded-full">
+                            <div class="h-full bg-primary rounded-full skill-bar" style="width: 90%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Python Skill Bar -->
+                    <div class="space-y-2">
+                        <div class="flex justify-between">
+                            <span class="font-medium">Python</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="h-2 bg-gray-700 rounded-full">
+                            <div class="h-full bg-primary rounded-full skill-bar" style="width: 80%"></div>
+                        </div>
+                    </div>
+
+                    <!-- HTML Skill Bar -->
+                    <div class="space-y-2">
+                        <div class="flex justify-between">
+                            <span class="font-medium">HTML</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="h-2 bg-gray-700 rounded-full">
+                            <div class="h-full bg-primary rounded-full skill-bar" style="width: 95%"></div>
+                        </div>
+                    </div>
+
+                    <!-- CSS Skill Bar -->
+                    <div class="space-y-2">
+                        <div class="flex justify-between">
+                            <span class="font-medium">CSS</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="h-2 bg-gray-700 rounded-full">
+                            <div class="h-full bg-primary rounded-full skill-bar" style="width: 95%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Javascript Skill Bar -->
+                    <div class="space-y-2">
+                        <div class="flex justify-between">
+                            <span class="font-medium">JavaScript</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="h-2 bg-gray-700 rounded-full">
+                            <div class="h-full bg-primary rounded-full skill-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                     <!-- React Skill Bar -->
+                     <div class="space-y-2">
+                        <div class="flex justify-between">
+                            <span class="font-medium">React</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="h-2 bg-gray-700 rounded-full">
+                            <div class="h-full bg-primary rounded-full skill-bar" style="width: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Professional Skills Section -->
+            <div class="space-y-6">
+                <h3 class="text-2xl font-semibold mb-6">Professional Skills</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <!-- Team Leadership Skill -->
+                    <div class="p-6 border border-gray-200 rounded-xl text-center hover:border-primary transition-colors bg-white shadow-sm">
+                        <i class="ri-team-line text-3xl text-primary mb-4"></i>
+                        <h4 class="font-semibold">Team Leadership</h4>
+                    </div>
+                    <!-- Communication Skill -->
+                    <div class="p-6 border border-gray-200 rounded-xl text-center hover:border-primary transition-colors bg-white shadow-sm">
+                        <i class="ri-customer-service-line text-3xl text-primary mb-4"></i>
+                        <h4 class="font-semibold">Communication</h4>
+                    </div>
+                    <!-- Time Management Skill -->
+                    <div class="p-6 border border-gray-200 rounded-xl text-center hover:border-primary transition-colors bg-white shadow-sm">
+                        <i class="ri-time-line text-3xl text-primary mb-4"></i>
+                        <h4 class="font-semibold">Time Management</h4>
+                    </div>
+                    <!-- Problem Solving Skill -->
+                    <div class="p-6 border border-gray-200 rounded-xl text-center hover:border-primary transition-colors bg-white shadow-sm">
+                        <i class="ri-lightbulb-line text-3xl text-primary mb-4"></i>
+                        <h4 class="font-semibold">Problem Solving</h4>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+</section>
+<!-- Recent Projects Section -->
+<section id="projects" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-16">Recent Projects</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Project 1 -->
+            <div class="group relative overflow-hidden rounded-xl">
+                <img src="assets/img/img1.png" class="w-full h-64 object-cover" alt="Project 1">
+                <div class="absolute inset-0 bg-primary/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="text-center text-white p-6">
+                        <h3 class="text-xl font-semibold mb-2">Wave Tune</h3>
+                        <p class="mb-4">A computer vision project that controls volume by Hand Gesture</p>
+                        <button class="!rounded-button bg-white text-primary px-6 py-2 hover:bg-white/90 transition-colors" onclick="window.open('https://github.com/Ayushi1245/GestureVolumeControl', '_blank')">View Project</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="group relative overflow-hidden rounded-xl">
+                <img src="assets/img/img3.png" class="w-full h-64 object-cover" alt="Project 2">
+                <div class="absolute inset-0 bg-primary/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="text-center text-white p-6">
+                        <h3 class="text-xl font-semibold mb-2">Vision Verse</h3>
+                        <p class="mb-4">AI Virtual Painter lets you draw on screen using hand gestures via webcam.</p>
+                        <button class="!rounded-button bg-white text-primary px-6 py-2 hover:bg-white/90 transition-colors" onclick="window.open('https://github.com/CS-BIT-Project/2228008-AYUSHI', '_blank')">View Project</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="group relative overflow-hidden rounded-xl">
+                <img src="assets/img/img2.png" class="w-full h-64 object-cover" alt="Project 3">
+                <div class="absolute inset-0 bg-primary/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="text-center text-white p-6">
+                        <h3 class="text-xl font-semibold mb-2">BrewNest</h3>
+                        <p class="mb-4">A cozy coffee website offering rich brews, blends, and a curated café experience online.</p>
+                        <button class="!rounded-button bg-white text-primary px-6 py-2 hover:bg-white/90 transition-colors" onclick="window.open('https://github.com/Ayushi1245', '_blank')">View Project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="py-20">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-16">Get in Touch</h2>
+        <div class="grid md:grid-cols-2 gap-12">
+            <!-- Contact Information -->
+            <div class="space-y-6">
+                <h3 class="text-2xl font-semibold">Contact Information</h3>
+                <div class="space-y-4">
+                    <!-- Email Contact -->
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full">
+                            <i class="ri-mail-line text-xl text-primary"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium">Email</h4>
+                            <p class="text-gray-400" >ayushi7607053@gmail.com</p>
+                        </div>
+                    </div>
+                    <!-- Phone Contact -->
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full">
+                            <i class="ri-phone-line text-xl text-primary"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium">Phone</h4>
+                            <p class="text-gray-400">+91 6299643760</p>
+                        </div>
+                    </div>
+                    <!-- Location Contact -->
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full">
+                            <i class="ri-map-pin-line text-xl text-primary"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium">Location</h4>
+                            <p class="text-gray-400">Haridwar , Uttarakhand</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Social Media Links -->
+                <div class="flex space-x-4 mt-8">
+                    <a href="https://www.linkedin.com/in/ayushi-singh-066967286/" class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full hover:bg-primary/20 transition-colors">
+                        <i class="ri-linkedin-fill text-primary"></i>
+                    </a>
+                    <a href="https://github.com/Ayushi1245" class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full hover:bg-primary/20 transition-colors">
+                        <i class="ri-github-fill text-primary"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full hover:bg-primary/20 transition-colors">
+                        <i class="ri-twitter-fill text-primary"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Contact Form -->
+            <form class="space-y-6">
+                <div class="space-y-4">
+                    <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white text-gray-800 focus:border-primary outline-none transition-colors">
+                    <input type="email" placeholder="Your Email" class="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white text-gray-800 focus:border-primary outline-none transition-colors">
+                    <textarea rows="5" placeholder="Your Message" class="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white text-gray-800 focus:border-primary outline-none transition-colors"></textarea>
+                </div>
+                <button type="submit" class="!rounded-button bg-primary text-white px-8 py-3 hover:bg-primary/90 transition-colors w-full">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- Footer Section -->
+<footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-8">
+            <!-- Logo and Description -->
+            <div class="space-y-4">
+                <h3 class="text-2xl font-['Pacifico']">Ayushi</h3>
+                <p class="text-gray-400">Creating digital experiences that make a difference.</p>
+            </div>
+            <!-- Quick Links -->
+            <div class="space-y-4">
+                <h4 class="font-semibold">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="#home" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                    <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                    <li><a href="#skills" class="text-gray-400 hover:text-white transition-colors">Skills</a></li>
+                    <li><a href="#projects" class="text-gray-400 hover:text-white transition-colors">Projects</a></li>
+                </ul>
+            </div>
+            <!-- Services Offered -->
+            <div class="space-y-4">
+                <h4 class="font-semibold">Services</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Machine Learning</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Web Development</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">UI/UX Design</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Database Management</a></li>
+                </ul>
+            </div>
+            <!-- Newsletter Subscription -->
+            <div class="space-y-4">
+                <h4 class="font-semibold">Newsletter</h4>
+                <p class="text-gray-400">Subscribe to receive updates and news.</p>
+                <form class="flex">
+                    <input type="email" placeholder="Your email" class="flex-1 px-4 py-2 rounded-l-lg border-none outline-none bg-white text-gray-800">
+                    <button type="submit" class="!rounded-none !rounded-r-lg bg-primary px-4 hover:bg-primary/90 transition-colors">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <!-- Footer Copyright -->
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+            <p>&copy; 2025 Ayushi. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Back to Top Button -->
+<button id="backToTop" class="fixed bottom-8 right-8 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center opacity-0 invisible transition-all duration-300 hover:bg-primary/90">
+    <i class="ri-arrow-up-line text-xl"></i>
+</button>
+
+<!-- JavaScript for Back to Top Button and Form Submission -->
+<script src="script.js"></script>
+</body>
+</html>
