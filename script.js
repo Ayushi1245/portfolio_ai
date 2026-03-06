@@ -1,48 +1,76 @@
-const backToTop = document.getElementById('backToTop');
+// ─── CUSTOM CURSOR ───────────────────────────────────────────────────────────
+const dot  = document.getElementById('dot');
+const ring = document.getElementById('ring');
 
-// Show or hide the back-to-top button based on scroll position
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 500) {
-        backToTop.classList.remove('opacity-0', 'invisible');
-        backToTop.classList.add('opacity-100', 'visible');
-    } else {
-        backToTop.classList.add('opacity-0', 'invisible');
-        backToTop.classList.remove('opacity-100', 'visible');
+let mx = 0, my = 0, rx = 0, ry = 0;
+
+document.addEventListener('mousemove', e => {
+  mx = e.clientX;
+  my = e.clientY;
+  dot.style.left = mx + 'px';
+  dot.style.top  = my + 'px';
+});
+
+(function tick() {
+  rx += (mx - rx) * 0.1;
+  ry += (my - ry) * 0.1;
+  ring.style.left = rx + 'px';
+  ring.style.top  = ry + 'px';
+  requestAnimationFrame(tick);
+})();
+
+document.querySelectorAll('a, button, .proj-glass, .stat-glass, .cl-item').forEach(el => {
+  el.addEventListener('mouseenter', () => {
+    dot.style.width  = '4px';
+    dot.style.height = '4px';
+    ring.style.width  = '48px';
+    ring.style.height = '48px';
+    ring.style.borderColor = 'rgba(236,72,153,0.5)';
+  });
+  el.addEventListener('mouseleave', () => {
+    dot.style.width  = '6px';
+    dot.style.height = '6px';
+    ring.style.width  = '32px';
+    ring.style.height = '32px';
+    ring.style.borderColor = 'rgba(167,139,250,0.5)';
+  });
+});
+
+// ─── SCROLL REVEAL ────────────────────────────────────────────────────────────
+const io = new IntersectionObserver(entries => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('on'), i * 80);
     }
+  });
+}, { threshold: 0.07 });
+
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// ─── ACTIVE NAV HIGHLIGHT ────────────────────────────────────────────────────
+window.addEventListener('scroll', () => {
+  let current = '';
+
+  document.querySelectorAll('section').forEach(s => {
+    if (window.scrollY >= s.offsetTop - 240) current = s.id;
+  });
+
+  document.querySelectorAll('.nav-list a').forEach(a => {
+    const isActive = a.getAttribute('href') === '#' + current;
+    a.style.color      = isActive ? '#a78bfa' : '';
+    a.style.background = isActive ? 'rgba(139,92,246,0.12)' : '';
+  });
 });
 
-// Scroll to the top when the button is clicked
-backToTop.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-});
-
-// Smooth scrolling for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
-// Handle form submission
-const form = document.querySelector('form');
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const formData = new FormData(form);
-    console.log('Form submitted:', Object.fromEntries(formData));
-    form.reset();
-});
-//Move the elements
-document.addEventListener('mousemove', move);
-function move(e){
-    this.querySelectorAll('.move').forEach(layer =>{
-        const speed = layer.getAttribute('data-speed')
-
-        const x = (window.innerWidth - e.pageX*speed)/120
-        const y = (window.innerHeight - e.pageY*speed)/120
-
-        layer.style.transform = `translateX(${x}px) translateY(${y}px)`
-    })
+// ─── CONTACT FORM ─────────────────────────────────────────────────────────────
+function submit(e) {
+  e.preventDefault();
+  const btn = e.target.querySelector('.fsub');
+  btn.textContent   = '✦ Sent — Thank you!';
+  btn.style.background = 'linear-gradient(135deg, rgba(34,211,238,0.5), rgba(139,92,246,0.5))';
+  setTimeout(() => {
+    btn.textContent  = 'Send Message ✦';
+    btn.style.background = '';
+    e.target.reset();
+  }, 3500);
 }

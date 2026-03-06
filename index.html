@@ -1,381 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Ayushi</title>
-    
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Remix Icon CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
-    
-    <!-- Link to external CSS file -->
-    <link rel="stylesheet" href="style.css">
-    <script>
-        tailwind.config = {
-        theme: {
-        extend: {
-        colors: {
-        primary: '#78dcc3',
-        secondary: '#88c8eb'
-        },
-        borderRadius: {
-        'none': '0px',
-        'sm': '4px',
-        DEFAULT: '8px',
-        'md': '12px',
-        'lg': '16px',
-        'xl': '20px',
-        '2xl': '24px',
-        '3xl': '32px',
-        'full': '9999px',
-        'button': '8px'
-        }
-        }
-        }
-        }
-        </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayushi — AI · NLP · LLMs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-white text-gray-800 font-['Inter']">
+<body>
 
-    <!-- Navigation Bar -->
-    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-200">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex items-center justify-between">
-                <a href="#" class="text-2xl font-['Pacifico'] text-primary">Ayushi</a>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#home" class="nav-link text-gray-600 hover:text-primary transition-colors">Home</a>
-                    <a href="#about" class="nav-link text-gray-600 hover:text-primary transition-colors">About</a>
-                    <a href="#skills" class="nav-link text-gray-600 hover:text-primary transition-colors">Skills</a>
-                    <a href="#projects" class="nav-link text-gray-600 hover:text-primary transition-colors">Projects</a>
-                    <a href="#contact" class="nav-link text-gray-600 hover:text-primary transition-colors">Contact</a>
-                    <button class="!rounded-button bg-primary text-white px-6 py-2 hover:bg-primary/90 transition-colors">Hire Me</button>
-                </div>
-                <button class="md:hidden w-10 h-10 flex items-center justify-center">
-                    <i class="ri-menu-line text-2xl"></i>
-                </button>
-            </div>
-        </div>
-    </nav>
+  <!-- BACKGROUND -->
+  <div class="bg-mesh"></div>
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="orb orb3"></div>
+  <div class="orb orb4"></div>
 
-    <!-- Home Section -->
-    <section id="home" class="pt-24 min-h-screen flex items-center relative overflow-hidden">
-        <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="space-y-6">
-                    <h1 class="text-5xl font-bold leading-tight">
-                        Hi, I'm Ayushi
-                        <span class="block text-primary mt-2">Web Developer</span>
-                    </h1>
-                    <p class="text-gray-600 text-lg">Building modern, responsive, and intuitive web experiences with a blend of creativity and technical expertise.</p>
-                    <div class="flex space-x-4">
-                        <button class="!rounded-button bg-primary text-white px-8 py-3 hover:bg-primary/90 transition-colors" onclick="window.open('https://github.com/Ayushi1245', '_blank')">View Projects</button>
-                    </div>
-                </div>
-                <!-- Image of 1st page -->
-                <div class="relative">
-                    <img src="assets/img/img5.png"  data-speed="2" class="move" alt="John Anderson">
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- CURSOR -->
+  <div id="dot"></div>
+  <div id="ring"></div>
 
-   <!-- About Section -->
-<section id="about" class="py-20 bg-gray-50">
-    <div class="container mx-auto px-6">
-        <h2 class="text-4xl font-bold text-center mb-16">About Me</h2>
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-            <div class="relative">
-                <img src="https://i.pinimg.com/736x/a0/fd/d0/a0fdd09acbc6144589ad64c5e2e816c5.jpg" class="rounded-2xl shadow-xl" alt="About Ayushi">
-            </div>
-            <div class="space-y-6">
-                <p class="text-gray-600">I’m Ayushi, a passionate Machine Learning Enthusiast and Front-End Developer with a strong background in Computer Vision, Sentiment Analysis, and Competitive Programming.</p>
-                <p class="text-gray-600">Currently pursuing my B.Sc. in Information Technology (Graduating in 2025), I love solving complex problems and building innovative projects.</p>
-                <div class="grid grid-cols-2 gap-4 mt-8">
-                    <div class="space-y-2">
-                        <div class="flex items-center space-x-2">
-                            <i class="ri-medal-line text-primary"></i>
-                            <span class="font-semibold">3rd year B.Sc IT student</span>
-                        </div>
-                        <div class="flex items-center space-x-2">
-                            <i class="ri-customer-service-line text-primary"></i>
-                            <span class="font-semibold">24/7 Support</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <!-- NAV -->
+  <nav>
+    <a href="#hero" class="nav-brand">AYUSHI</a>
+    <ul class="nav-list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── HERO ─────────────────────────────────────────────────────────────── -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-chip">AI · NLP · LLMs · Always Learning</div>
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">AYUSHI</h1>
+      <p class="hero-tagline">
+        I build things that <b>understand language, see the world, and think</b> — diving deep
+        into LLMs, NLP pipelines, and ML systems. Pursuing MCA · obsessed with AI · Dehradun 🏔️
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-glass btn-primary-glass">View Projects</a>
+        <a href="#contact"  class="btn-glass btn-outline-glass">Get In Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat"><div class="hstat-val">LLMs</div><div class="hstat-lbl">Current Focus</div></div>
+        <div class="hstat"><div class="hstat-val">NLP</div><div class="hstat-lbl">Deep Interest</div></div>
+        <div class="hstat"><div class="hstat-val">200+</div><div class="hstat-lbl">LeetCode</div></div>
+        <div class="hstat"><div class="hstat-val">∞</div><div class="hstat-lbl">Curiosity</div></div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Skills Section -->
-<section id="skills" class="py-20">
-    <div class="container mx-auto px-6">
-        <h2 class="text-4xl font-bold text-center mb-16">My Skills</h2>
-        <div class="grid md:grid-cols-2 gap-12">
-            <div class="space-y-6">
-                <h3 class="text-2xl font-semibold mb-6">Technical Skills</h3>
-                <div class="space-y-4">
-                    <!-- C/C++ Skill Bar -->
-                    <div class="space-y-2">
-                        <div class="flex justify-between">
-                            <span class="font-medium">C/C++</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="h-2 bg-gray-700 rounded-full">
-                            <div class="h-full bg-primary rounded-full skill-bar" style="width: 90%"></div>
-                        </div>
-                    </div>
+  <!-- ── ABOUT ─────────────────────────────────────────────────────────────── -->
+  <section id="about">
+    <div style="max-width:1100px; margin:0 auto;">
+      <div class="sec-head reveal">
+        <p class="sec-eyebrow">About Me</p>
+        <h2 class="sec-title">Building Minds, <span>One Model at a Time</span></h2>
+      </div>
 
-                    <!-- Python Skill Bar -->
-                    <div class="space-y-2">
-                        <div class="flex justify-between">
-                            <span class="font-medium">Python</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="h-2 bg-gray-700 rounded-full">
-                            <div class="h-full bg-primary rounded-full skill-bar" style="width: 80%"></div>
-                        </div>
-                    </div>
+      <div class="about-wrap">
+        <!-- Left column -->
+        <div class="glass about-glass reveal">
+          <p>
+            I'm <b>Ayushi</b> — an AI & ML enthusiast pursuing my
+            <b>MCA at Graphic Era Hill University, Dehradun</b>. My passion?
+            <em>Language models, NLP pipelines, and anything that pushes the boundaries
+            of what machines can understand.</em>
+          </p>
+          <p>
+            I'm deeply fascinated by <b>Large Language Models</b> — how they're trained,
+            how they reason, and how they can be fine-tuned for real-world tasks. From
+            tokenisation and embeddings to attention mechanisms and prompt engineering,
+            I love exploring every layer of the LLM stack.
+          </p>
+          <p>
+            I also enjoy building computer vision systems and classic ML pipelines. A
+            <b>Data Science Intern</b> at Shriram Software Solutions gave me real-world
+            grounding. Beyond code, I paint, sketch, play basketball — and always stay
+            hungry for the next new technology.
+          </p>
 
-                    <!-- HTML Skill Bar -->
-                    <div class="space-y-2">
-                        <div class="flex justify-between">
-                            <span class="font-medium">HTML</span>
-                            <span>95%</span>
-                        </div>
-                        <div class="h-2 bg-gray-700 rounded-full">
-                            <div class="h-full bg-primary rounded-full skill-bar" style="width: 95%"></div>
-                        </div>
-                    </div>
+          <div class="tag-row">
+            <span class="tag">LLMs</span>
+            <span class="tag">Transformers</span>
+            <span class="tag">NLP</span>
+            <span class="tag">HuggingFace</span>
+            <span class="tag">Prompt Engineering</span>
+            <span class="tag">Fine-tuning</span>
+            <span class="tag">Python</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">Scikit-learn</span>
+            <span class="tag">OpenCV</span>
+            <span class="tag">spaCy</span>
+            <span class="tag">RAG</span>
+          </div>
 
-                    <!-- CSS Skill Bar -->
-                    <div class="space-y-2">
-                        <div class="flex justify-between">
-                            <span class="font-medium">CSS</span>
-                            <span>95%</span>
-                        </div>
-                        <div class="h-2 bg-gray-700 rounded-full">
-                            <div class="h-full bg-primary rounded-full skill-bar" style="width: 95%"></div>
-                        </div>
-                    </div>
-
-                    <!-- Javascript Skill Bar -->
-                    <div class="space-y-2">
-                        <div class="flex justify-between">
-                            <span class="font-medium">JavaScript</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="h-2 bg-gray-700 rounded-full">
-                            <div class="h-full bg-primary rounded-full skill-bar" style="width: 85%"></div>
-                        </div>
-                    </div>
-                     <!-- React Skill Bar -->
-                     <div class="space-y-2">
-                        <div class="flex justify-between">
-                            <span class="font-medium">React</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="h-2 bg-gray-700 rounded-full">
-                            <div class="h-full bg-primary rounded-full skill-bar" style="width: 60%"></div>
-                        </div>
-                    </div>
-                </div>
+          <!-- Experience -->
+          <div class="exp-glass glass" style="margin-top:28px;">
+            <div class="exp-top">
+              <span class="exp-emoji">💼</span>
+              <div>
+                <div class="exp-company">Shriram Software Solutions</div>
+                <div class="exp-role-lbl">Data Science Intern</div>
+              </div>
             </div>
-            <!-- Professional Skills Section -->
-            <div class="space-y-6">
-                <h3 class="text-2xl font-semibold mb-6">Professional Skills</h3>
-                <div class="grid grid-cols-2 gap-4">
-                    <!-- Team Leadership Skill -->
-                    <div class="p-6 border border-gray-200 rounded-xl text-center hover:border-primary transition-colors bg-white shadow-sm">
-                        <i class="ri-team-line text-3xl text-primary mb-4"></i>
-                        <h4 class="font-semibold">Team Leadership</h4>
-                    </div>
-                    <!-- Communication Skill -->
-                    <div class="p-6 border border-gray-200 rounded-xl text-center hover:border-primary transition-colors bg-white shadow-sm">
-                        <i class="ri-customer-service-line text-3xl text-primary mb-4"></i>
-                        <h4 class="font-semibold">Communication</h4>
-                    </div>
-                    <!-- Time Management Skill -->
-                    <div class="p-6 border border-gray-200 rounded-xl text-center hover:border-primary transition-colors bg-white shadow-sm">
-                        <i class="ri-time-line text-3xl text-primary mb-4"></i>
-                        <h4 class="font-semibold">Time Management</h4>
-                    </div>
-                    <!-- Problem Solving Skill -->
-                    <div class="p-6 border border-gray-200 rounded-xl text-center hover:border-primary transition-colors bg-white shadow-sm">
-                        <i class="ri-lightbulb-line text-3xl text-primary mb-4"></i>
-                        <h4 class="font-semibold">Problem Solving</h4>
-                    </div>
-                </div>
+            <div class="exp-body">
+              Worked on EDA, data cleaning, and model evaluation using Python and scikit-learn
+              on real-world datasets. Collaborated with mentors to understand production data
+              workflows and improve feature engineering techniques.
             </div>
-    </div>
-    </div>
-</section>
-<!-- Recent Projects Section -->
-<section id="projects" class="py-20 bg-gray-50">
-    <div class="container mx-auto px-6">
-        <h2 class="text-4xl font-bold text-center mb-16">Recent Projects</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-            <!-- Project 1 -->
-            <div class="group relative overflow-hidden rounded-xl">
-                <img src="assets/img/img1.png" class="w-full h-64 object-cover" alt="Project 1">
-                <div class="absolute inset-0 bg-primary/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div class="text-center text-white p-6">
-                        <h3 class="text-xl font-semibold mb-2">Wave Tune</h3>
-                        <p class="mb-4">A computer vision project that controls volume by Hand Gesture</p>
-                        <button class="!rounded-button bg-white text-primary px-6 py-2 hover:bg-white/90 transition-colors" onclick="window.open('https://github.com/Ayushi1245/GestureVolumeControl', '_blank')">View Project</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 2 -->
-            <div class="group relative overflow-hidden rounded-xl">
-                <img src="assets/img/img3.png" class="w-full h-64 object-cover" alt="Project 2">
-                <div class="absolute inset-0 bg-primary/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div class="text-center text-white p-6">
-                        <h3 class="text-xl font-semibold mb-2">Vision Verse</h3>
-                        <p class="mb-4">AI Virtual Painter lets you draw on screen using hand gestures via webcam.</p>
-                        <button class="!rounded-button bg-white text-primary px-6 py-2 hover:bg-white/90 transition-colors" onclick="window.open('https://github.com/CS-BIT-Project/2228008-AYUSHI', '_blank')">View Project</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 3 -->
-            <div class="group relative overflow-hidden rounded-xl">
-                <img src="assets/img/img2.png" class="w-full h-64 object-cover" alt="Project 3">
-                <div class="absolute inset-0 bg-primary/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div class="text-center text-white p-6">
-                        <h3 class="text-xl font-semibold mb-2">BrewNest</h3>
-                        <p class="mb-4">A cozy coffee website offering rich brews, blends, and a curated café experience online.</p>
-                        <button class="!rounded-button bg-white text-primary px-6 py-2 hover:bg-white/90 transition-colors" onclick="window.open('https://github.com/Ayushi1245', '_blank')">View Project</button>
-                    </div>
-                </div>
-            </div>
+            <div class="exp-date">June 2025 — July 2025 · Haridwar, Uttarakhand</div>
+          </div>
         </div>
-    </div>
-</section>
-<!-- Contact Section -->
-<section id="contact" class="py-20">
-    <div class="container mx-auto px-6">
-        <h2 class="text-4xl font-bold text-center mb-16">Get in Touch</h2>
-        <div class="grid md:grid-cols-2 gap-12">
-            <!-- Contact Information -->
-            <div class="space-y-6">
-                <h3 class="text-2xl font-semibold">Contact Information</h3>
-                <div class="space-y-4">
-                    <!-- Email Contact -->
-                    <div class="flex items-center space-x-4">
-                        <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full">
-                            <i class="ri-mail-line text-xl text-primary"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-medium">Email</h4>
-                            <p class="text-gray-400" >ayushi7607053@gmail.com</p>
-                        </div>
-                    </div>
-                    <!-- Phone Contact -->
-                    <div class="flex items-center space-x-4">
-                        <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full">
-                            <i class="ri-phone-line text-xl text-primary"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-medium">Phone</h4>
-                            <p class="text-gray-400">+91 6299643760</p>
-                        </div>
-                    </div>
-                    <!-- Location Contact -->
-                    <div class="flex items-center space-x-4">
-                        <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full">
-                            <i class="ri-map-pin-line text-xl text-primary"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-medium">Location</h4>
-                            <p class="text-gray-400">Haridwar , Uttarakhand</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Social Media Links -->
-                <div class="flex space-x-4 mt-8">
-                    <a href="https://www.linkedin.com/in/ayushi-singh-066967286/" class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full hover:bg-primary/20 transition-colors">
-                        <i class="ri-linkedin-fill text-primary"></i>
-                    </a>
-                    <a href="https://github.com/Ayushi1245" class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full hover:bg-primary/20 transition-colors">
-                        <i class="ri-github-fill text-primary"></i>
-                    </a>
-                    <a href="#" class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full hover:bg-primary/20 transition-colors">
-                        <i class="ri-twitter-fill text-primary"></i>
-                    </a>
-                </div>
-            </div>
-            <!-- Contact Form -->
-            <form class="space-y-6">
-                <div class="space-y-4">
-                    <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white text-gray-800 focus:border-primary outline-none transition-colors">
-                    <input type="email" placeholder="Your Email" class="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white text-gray-800 focus:border-primary outline-none transition-colors">
-                    <textarea rows="5" placeholder="Your Message" class="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white text-gray-800 focus:border-primary outline-none transition-colors"></textarea>
-                </div>
-                <button type="submit" class="!rounded-button bg-primary text-white px-8 py-3 hover:bg-primary/90 transition-colors w-full">Send Message</button>
-            </form>
-        </div>
-    </div>
-</section>
-<!-- Footer Section -->
-<footer class="bg-gray-900 text-white py-12">
-    <div class="container mx-auto px-6">
-        <div class="grid md:grid-cols-4 gap-8">
-            <!-- Logo and Description -->
-            <div class="space-y-4">
-                <h3 class="text-2xl font-['Pacifico']">Ayushi</h3>
-                <p class="text-gray-400">Creating digital experiences that make a difference.</p>
-            </div>
-            <!-- Quick Links -->
-            <div class="space-y-4">
-                <h4 class="font-semibold">Quick Links</h4>
-                <ul class="space-y-2">
-                    <li><a href="#home" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
-                    <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
-                    <li><a href="#skills" class="text-gray-400 hover:text-white transition-colors">Skills</a></li>
-                    <li><a href="#projects" class="text-gray-400 hover:text-white transition-colors">Projects</a></li>
-                </ul>
-            </div>
-            <!-- Services Offered -->
-            <div class="space-y-4">
-                <h4 class="font-semibold">Services</h4>
-                <ul class="space-y-2">
-                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Machine Learning</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Web Development</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">UI/UX Design</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Database Management</a></li>
-                </ul>
-            </div>
-            <!-- Newsletter Subscription -->
-            <div class="space-y-4">
-                <h4 class="font-semibold">Newsletter</h4>
-                <p class="text-gray-400">Subscribe to receive updates and news.</p>
-                <form class="flex">
-                    <input type="email" placeholder="Your email" class="flex-1 px-4 py-2 rounded-l-lg border-none outline-none bg-white text-gray-800">
-                    <button type="submit" class="!rounded-none !rounded-r-lg bg-primary px-4 hover:bg-primary/90 transition-colors">Subscribe</button>
-                </form>
-            </div>
-        </div>
-        <!-- Footer Copyright -->
-        <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Ayushi. All rights reserved.</p>
-        </div>
-    </div>
-</footer>
 
-<!-- Back to Top Button -->
-<button id="backToTop" class="fixed bottom-8 right-8 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center opacity-0 invisible transition-all duration-300 hover:bg-primary/90">
-    <i class="ri-arrow-up-line text-xl"></i>
-</button>
+        <!-- Right column — stat cards -->
+        <div class="about-right reveal">
+          <div class="glass stat-glass"><div class="sg-num violet">LLMs</div><div class="sg-lbl">Current Obsession</div></div>
+          <div class="glass stat-glass"><div class="sg-num pink">8.27</div><div class="sg-lbl">B.Sc IT CGPA</div></div>
+          <div class="glass stat-glass"><div class="sg-num cyan">200+</div><div class="sg-lbl">LeetCode Solved</div></div>
+          <div class="glass stat-glass"><div class="sg-num gold">Gold</div><div class="sg-lbl">HackerRank C++</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- JavaScript for Back to Top Button and Form Submission -->
-<script src="script.js"></script>
+  <!-- ── SKILLS ─────────────────────────────────────────────────────────────── -->
+  <section id="skills">
+    <div style="max-width:1100px; margin:0 auto;">
+      <div class="sec-head reveal">
+        <p class="sec-eyebrow">Skills</p>
+        <h2 class="sec-title">My <span>Toolkit</span></h2>
+      </div>
+
+      <div class="skills-wrap">
+        <!-- ML & DL -->
+        <div class="glass skill-glass reveal">
+          <div class="sk-hd"><span class="sk-emoji">🧠</span><span class="sk-name">ML & Deep Learning</span></div>
+          <div class="bar-item"><div class="bar-row"><span class="bar-label">Scikit-learn</span><span class="bar-pct">85%</span></div><div class="bar-track"><div class="bar-fill bv" style="width:85%"></div></div></div>
+          <div class="bar-item"><div class="bar-row"><span class="bar-label">TensorFlow</span><span class="bar-pct">72%</span></div><div class="bar-track"><div class="bar-fill bv" style="width:72%"></div></div></div>
+          <div class="bar-item"><div class="bar-row"><span class="bar-label">EDA & Feature Engineering</span><span class="bar-pct">88%</span></div><div class="bar-track"><div class="bar-fill bv" style="width:88%"></div></div></div>
+          <div class="bar-item"><div class="bar-row"><span class="bar-label">Model Evaluation</span><span class="bar-pct">82%</span></div><div class="bar-track"><div class="bar-fill bv" style="width:82%"></div></div></div>
+        </div>
+
+        <!-- Vision & NLP -->
+        <div class="glass skill-glass reveal">
+          <div class="sk-hd"><span class="sk-emoji">👁️</span><span class="sk-name">Vision & NLP</span></div>
+          <div class="bar-item"><div class="bar-row"><span class="bar-label">OpenCV</span><span class="bar-pct">80%</span></div><div class="bar-track"><div class="bar-fill bp" style="width:80%"></div></div></div>
+          <div class="bar-item"><div class="bar-row"><span class="bar-label">Mediapipe</span><span class="bar-pct">78%</span></div><div class="bar-track"><div class="bar-fill bp" style="width:78%"></div></div></div>
+          <div class="bar-item"><div class="bar-row"><span class="bar-label">spaCy</span><span class="bar-pct">70%</span></div><div class="bar-track"><div class="bar-fill bp" style="width:70%"></div></div></div>
+          <div class="bar-item"><div class="bar-row"><span class="bar-label">TF-IDF / Text Processing</span><span class="bar-pct">75%</span></div><div class="bar-track"><div class="bar-fill bp" style="width:75%"></div></div></div>
+        </div>
+
+        <!-- Languages & Data Tools -->
+        <div class="glass skill-glass reveal">
+          <div class="sk-hd"><span class="sk-emoji">⚡</span><span class="sk-name">Languages & Data Tools</span></div>
+          <div class="bar-item"><div class="bar-row"><span class="bar-label">Python / Pandas / NumPy</span><span class="bar-pct">90%</span></div><div class="bar-track"><div class="bar-fill bc" style="width:90%"></div></div></div>
+          <div class="bar-item"><div class="bar-row"><span class="bar-label">C / C++</span><span class="bar-pct">80%</span></div><div class="bar-track"><div class="bar-fill bc" style="width:80%"></div></div></div>
+          <div class="bar-item"><div class="bar-row"><span class="bar-label">SQL / MySQL / PostgreSQL</span><span class="bar-pct">78%</span></div><div class="bar-track"><div class="bar-fill bc" style="width:78%"></div></div></div>
+          <div class="bar-item"><div class="bar-row"><span class="bar-label">Matplotlib / Seaborn</span><span class="bar-pct">85%</span></div><div class="bar-track"><div class="bar-fill bc" style="width:85%"></div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ───────────────────────────────────────────────────────────── -->
+  <section id="projects">
+    <div style="max-width:1100px; margin:0 auto;">
+      <div class="sec-head reveal">
+        <p class="sec-eyebrow">Projects</p>
+        <h2 class="sec-title">Things I've <span>Built</span></h2>
+      </div>
+
+      <div class="proj-grid">
+        <!-- Featured -->
+        <div class="glass proj-glass feat reveal">
+          <div class="proj-top">
+            <span class="proj-cat">Computer Vision</span>
+            <span class="proj-feat-badge">★ Featured</span>
+          </div>
+          <div class="proj-title">AI Virtual Painter</div>
+          <div class="proj-desc">
+            A real-time hand-tracking app that lets you paint in mid-air using just your fingers.
+            Mediapipe detects hand landmarks to switch between drawing and selection modes.
+            Gesture-based distance calculation enables volume control. Optimised frame handling
+            delivers smooth, low-latency performance.
+          </div>
+          <div class="badge-row">
+            <span class="pbadge">Mediapipe</span>
+            <span class="pbadge">OpenCV</span>
+            <span class="pbadge">Python</span>
+            <span class="pbadge">Gesture Recognition</span>
+            <span class="pbadge">Real-time CV</span>
+          </div>
+          <a href="#" class="proj-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            View on GitHub
+          </a>
+        </div>
+
+        <!-- Churn Prediction -->
+        <div class="glass proj-glass reveal">
+          <div class="proj-top"><span class="proj-cat pink-cat">Machine Learning</span></div>
+          <div class="proj-title">Customer Churn Prediction</div>
+          <div class="proj-desc">
+            Predicted bank customer churn using Logistic Regression, Random Forest &
+            Gradient Boosting. Full EDA, encoding, and scaling pipeline. Random Forest
+            achieved the best results.
+          </div>
+          <div class="acc-pill">🎯 86% Accuracy · 71% F1-score</div>
+          <div class="badge-row">
+            <span class="pbadge">Pandas</span>
+            <span class="pbadge">Scikit-learn</span>
+            <span class="pbadge">Seaborn</span>
+            <span class="pbadge">Random Forest</span>
+          </div>
+          <a href="#" class="proj-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            View on GitHub
+          </a>
+        </div>
+
+        <!-- Spam Detection -->
+        <div class="glass proj-glass reveal">
+          <div class="proj-top"><span class="proj-cat cyan-cat">NLP</span></div>
+          <div class="proj-title">Spam Mail Detection</div>
+          <div class="proj-desc">
+            NLP classifier filtering spam using Logistic Regression trained on Kaggle data.
+            TF-IDF vectorisation transforms messy raw email text into clean features,
+            reliably separating spam from legitimate mail.
+          </div>
+          <div class="badge-row">
+            <span class="pbadge">Logistic Regression</span>
+            <span class="pbadge">TF-IDF</span>
+            <span class="pbadge">Python</span>
+            <span class="pbadge">Kaggle</span>
+          </div>
+          <a href="#" class="proj-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            View on GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ────────────────────────────────────────────────────────────── -->
+  <section id="contact">
+    <div style="max-width:1100px; margin:0 auto;">
+      <div class="sec-head reveal">
+        <p class="sec-eyebrow">Contact</p>
+        <h2 class="sec-title">Let's <span>Connect</span></h2>
+      </div>
+
+      <div class="contact-wrap">
+        <!-- Info card -->
+        <div class="glass contact-card reveal">
+          <p class="contact-tagline">
+            Open to <b>internships</b>, collaborations, and interesting data science projects.
+            Whether you have a dataset to crack or just want to geek out about ML —
+            my inbox is open!
+          </p>
+          <div class="link-list">
+            <a href="mailto:ayushi7607053@gmail.com" class="cl-item">
+              <span class="cl-icon">✉️</span>
+              <div><div class="cl-lbl">Email</div><div class="cl-val">ayushi7607053@gmail.com</div></div>
+            </a>
+            <a href="#" class="cl-item">
+              <span class="cl-icon">💼</span>
+              <div><div class="cl-lbl">LinkedIn</div><div class="cl-val">Add your LinkedIn URL</div></div>
+            </a>
+            <a href="#" class="cl-item">
+              <span class="cl-icon">🐙</span>
+              <div><div class="cl-lbl">GitHub</div><div class="cl-val">Add your GitHub URL</div></div>
+            </a>
+            <a href="#" class="cl-item">
+              <span class="cl-icon">📊</span>
+              <div><div class="cl-lbl">Kaggle</div><div class="cl-val">Add your Kaggle URL</div></div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact form -->
+        <form class="glass form-glass reveal" onsubmit="submit(event)">
+          <div class="frow">
+            <div class="fg"><label class="fl">Name</label><input type="text" class="fi" placeholder="Your name" required></div>
+            <div class="fg"><label class="fl">Email</label><input type="email" class="fi" placeholder="your@email.com" required></div>
+          </div>
+          <div class="fg"><label class="fl">Subject</label><input type="text" class="fi" placeholder="What's on your mind?"></div>
+          <div class="fg"><label class="fl">Message</label><textarea class="ft" placeholder="Tell me about your project..."></textarea></div>
+          <button type="submit" class="fsub">Send Message ✦</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────────────────────── -->
+  <footer>
+    <div class="ft-l"><span>Ayushi</span> &nbsp;·&nbsp; Data Science & ML</div>
+    <div class="ft-r">Made with glass &amp; gradients ✦</div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
