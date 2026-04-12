@@ -730,5 +730,17 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="https://replygeniebackend-production.up.railway.app/public/chatbot-widget.min.js"></script>
+  <script>
+  window.addEventListener('load', () => {
+    ChatbotWidget.init({
+      apiUrl: "https://replygeniebackend-production.up.railway.app/chat",
+      clientId: "ayspfolio",
+      title: "Ayushi's Portfolio Bot",
+      greeting: "Hi! I can answer questions about Ayushi's skills and projects.",
+      primaryColor: "#7C3AED"
+    });
+  });
+</script>
 </body>
 </html>
