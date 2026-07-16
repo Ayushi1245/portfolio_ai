@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ayushi — AI · NLP · LLMs</title>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@300;400;500&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=11">
 </head>
 <body>
 
@@ -280,23 +280,25 @@
         <div class="glass proj-glass feat reveal">
           <div class="proj-top">
             <span class="proj-cat gold-cat">RAG · AI</span>
-            <span class="proj-feat-badge">★ In Progress</span>
+            <span class="proj-feat-badge">★ Featured</span>
           </div>
-          <div class="proj-title">Multi-Modal RAG (Text + Images)</div>
+          <div class="proj-title">Multimodal PDF RAG</div>
           <div class="proj-desc">
-            Advanced RAG pipeline processing PDFs with charts, tables, and images. Chat with both 
-            textual and visual content using vision models. Extracts structured data from complex 
-            documents and answers questions with multi-modal context understanding.
+            Chat with your PDFs — including the images, charts, and diagrams inside them.
+            Extracts text and images simultaneously using PyMuPDF, summarizes visuals with 
+            Groq's vision model (Llama-3.2-11b) so they become text-searchable, and displays 
+            inline visual citations. Embeddings and vector storage run fully local via ChromaDB.
           </div>
           <div class="badge-row">
-            <span class="pbadge">LlamaIndex</span>
-            <span class="pbadge">Vision Models</span>
-            <span class="pbadge">FAISS</span>
-            <span class="pbadge">Groq / Llama-3</span>
+            <span class="pbadge">LangChain</span>
+            <span class="pbadge">ChromaDB</span>
+            <span class="pbadge">Groq Vision</span>
+            <span class="pbadge">Llama-3.3-70b</span>
+            <span class="pbadge">PyMuPDF</span>
+            <span class="pbadge">HuggingFace</span>
             <span class="pbadge">Streamlit</span>
-            <span class="pbadge">2026 Trend</span>
           </div>
-          <a href="https://github.com/Ayushi1245" class="proj-link">
+          <a href="https://github.com/Ayushi1245/multimodal_pdf_rag" class="proj-link">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             View on GitHub
           </a>
@@ -308,19 +310,20 @@
           <div class="proj-top"><span class="proj-cat emerald-cat">LLM · Matching</span></div>
           <div class="proj-title">AI Resume Analyzer & Job Matcher</div>
           <div class="proj-desc">
-            Intelligent resume-to-job matcher with PDF parsing and semantic understanding. 
-            Generates match scores, identifies missing keywords, and provides improvement 
-            suggestions. Produces tailored resume versions optimized for specific job descriptions.
+            Upload a PDF or DOCX resume and get an instant AI-powered analysis — executive summary, 
+            strengths, weaknesses, and identified skills. Paste a job description to get an ATS 
+            match score, keyword gap analysis, and actionable recommendations. Uses Groq's 
+            Llama-3.3-70b with structured JSON prompting for reliable output parsing.
           </div>
           <div class="badge-row">
-            <span class="pbadge">LlamaIndex</span>
             <span class="pbadge">LangChain</span>
-            <span class="pbadge">Chroma / FAISS</span>
-            <span class="pbadge">Groq</span>
-            <span class="pbadge">PDF Parsing</span>
-            <span class="pbadge">Embeddings</span>
+            <span class="pbadge">Groq / Llama-3.3</span>
+            <span class="pbadge">pdfplumber</span>
+            <span class="pbadge">python-docx</span>
+            <span class="pbadge">ATS Scoring</span>
+            <span class="pbadge">Streamlit</span>
           </div>
-          <a href="https://github.com/Ayushi1245" class="proj-link">
+          <a href="https://github.com/Ayushi1245/resume_analyzer" class="proj-link">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             View on GitHub
           </a>
